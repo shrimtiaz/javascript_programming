@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Functions</title>
+  <link rel="icon" type="image/x-icon" href="js1.png">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- .................HERO CONVERTERT............. -->
+
+
+<div class="herocon">
+  <h1>Hero Conversion</h1>
+  <p style="text-align: center;">Here the conversion factors are: <br>1 pound = 0.4536 kilograms, <br>1 kilogram = 2.2046 pounds. </P>
+  <div class="converter">
+    <label for="weight">Weight: </label>
+  <input type="number" id="weight" placeholder="Enter weight">
+  
+  <label for="conversionType">Convert To: </label>
+  <select id="conversionType">
+    <option value="kgToLb">KG to lb</option>
+    <option value="lbToKg">lb to KG</option>
+  </select>
+  <br>
+  <button id="convert" onclick="convert()">Convert</button>
+  
+  <p id="result"></p>
+  </div>
+  <br>
+</div>
+
+
+
+<!-- ...........................NUMBER STATS........................... -->
+
+
+
+
+
+<div class="numseries">
+  <h1>Number Stats</h1>
+  
+  <label for="numbers">Enter numbers (comma-separated):</label>
+  <br>
+  <input type="text" id="numbers" placeholder="e.g., 5, 10, 3, 8, 2">
+  <br>
+  
+  <button id="option" onclick="calculateStats()">Calculate</button>
+  
+  <h2>Results:</h2>
+  <div id="max"></div>
+  <div id="min"></div>
+  <div id="sum"></div>
+  <div id="average"></div>
+  <div id="reversed"></div>
+</div>
+
+
+<!-- .................................WISDOM QUOTE......................... -->
+
+<div id="quote" ></div>
+
+  <div class="color-button" id="red"></div>
+  <div class="color-button" id="green"></div>
+  <div class="color-button" id="blue"></div>
+  <div class="color-button" id="yellow"></div>
+
+
+   <!-- .....................................TEXT BOX....................... -->
+
+<div class="box">
+ <button id="option" onclick="clearAll()">Clear All</button>
+  <button id="option" onclick="capitalizeText()">Capitalize</button>
+  <button id="option" onclick="sortText()">Sort</button>
+  <button id="option" onclick="reverseText()">Reverse</button>
+  <button id="option" onclick="stripBlanks()">Strip Blanks</button>
+  <button id="option" onclick="shuffleText()">Shuffle</button>
+  <button id="option" onclick="addNumbers()">Add Numbers</button>
+  <br>
+  <textarea id="output" rows="6" cols="50"></textarea>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
